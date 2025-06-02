@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-darkBlue sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-3" href="#">
+      <i class="fas fa-film me-2 text-warning"></i>
+      <span class="text-warning">Movie</span>DB
+    </a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <!-- Películas -->
+        <li class="nav-item">
+          <a class="nav-link active fw-semibold" [routerLink]="['movies']" >
+            <i class="bi bi-film"></i>
+            Películas
+          </a>
+        </li>
+
+        <!-- Series -->
+        <li class="nav-item">
+          <a class="nav-link fw-semibold" [routerLink]="['series']">
+            <i class="bi bi-tv"></i>
+            Series
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

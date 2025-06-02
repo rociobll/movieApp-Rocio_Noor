@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { environment } from '../environments.ts/environment';
+import { environment } from '../../environments.ts/environment';
 
 @Injectable({providedIn: 'root'})
 export class MovieDbService {

@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { MoviesComponent } from "./pages/movies/movies.component";
+import { NavbarComponent } from "./shared/components/navbar/navbar.component";
+import { FooterComponent } from "./shared/components/footer/footer.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, MoviesComponent],
+  imports: [RouterOutlet, MoviesComponent, NavbarComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
